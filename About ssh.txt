@@ -1,0 +1,4 @@
+whenusing git push with ssh, git looks for ssh file with name id_rsa. It is complicated trying to make it use a key in a different file name.
+The ssh files are in the .ssh folder in home.
+SSH agent is like a single sign on tool that let's one use ssh without entering the passphrase everytime. It can be dangerous if you are sharing one terminal with others.
+

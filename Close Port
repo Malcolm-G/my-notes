@@ -1,0 +1,5 @@
+Steps I used to close a port
+
+- Look at open ports with command `ss-tp`
+- kill the process using its PID number with command `kill -term <PID>`
+- if -term flag doesn't stop the process, a more forceful approach is `kill -kill <PID>`
