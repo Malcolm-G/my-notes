@@ -1,0 +1,147 @@
+INSTALLATIONS
+<----------->
+
+<--- Chrome --->
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+sudo apt install ./google-chrome-stable_current_amd64.deb
+
+<--- vs code --->
+
+vs coe download
+
+To update VS code, got to: https://askubuntu.com/questions/833448/how-can-i-update-visual-studio-code-on-ubuntu
+
+<--- Git --->
+sudo apt update
+sudo apt install git
+
+https://github.com
+
+git config --global user.email "me@email.com"
+git config --global user.name "git_username"
+
+ssh-keygen
+
+cat ~/.ssh/id_rsa.pub
+
+github --> settings --> SSH --> new SSH
+
+
+<--- Node --->
+sudo apt update
+
+sudo apt install curl 
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
+
+source ~/.bashrc 
+nvm install 16.18.1
+
+npm install create-react-app
+
+
+<--- Ruby --->
+sudo apt update
+
+sudo apt install sqlite3
+
+sudo apt install ruby
+
+<-- or -->
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+exec $SHELL
+
+git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+
+rbenv install 2.7.4
+rbenv global 2.7.1
+
+<- Fails ->
+sudo apt-get install -y libreadline-dev zlib1g-dev
+
+ruby -v
+
+gem install bundler
+
+rbenv rehash
+
+gem install rails
+
+rbenv rehash
+
+<-- or -->
+sudo apt update
+sudo apt install gnupg2
+
+gpg2 --keyserver hkp://keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+
+sudo apt install curl
+
+\curl -sSL https://get.rvm.io -o rvm.sh
+
+nano rvm.sh
+
+rvm install 2.7.4
+
+rvm use 2.7.4
+
+
+<--- Postgres --->
+sudo apt update
+
+sudo apt install postgresql postgresql-contrib
+sudo systemctl start postgresql.service
+
+sudo -i -u postgres
+psql
+
+CREATE ROLE username superuser;
+ALTER ROLE username WITH LOGIN;
+ALTER USER username WITH PASSWORD 'new_password';
+
+CTRL + C
+
+su username
+
+<---- SQLite ---->
+Go to: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-sqlite-on-ubuntu-20-04
+
+<---- ERRORS ---->
+
+sudo apt-get autoremove ruby
+
+rm -rf /usr/local/lib/ruby
+rm -rf /usr/lib/ruby
+rm -f /usr/local/bin/ruby
+rm -f /usr/bin/ruby
+rm -f /usr/local/bin/irb
+rm -f /usr/bin/irb
+rm -f /usr/local/bin/gem
+rm -f /usr/bin/gem
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
